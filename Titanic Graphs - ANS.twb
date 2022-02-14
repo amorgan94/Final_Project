@@ -1,0 +1,1476 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='titanic (2)' inline='true' name='federated.1095d8g1y72wdj0zz3fkh0dc23cq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='titanic' name='textscan.0pmgelz1srehgl19v7kxi076fj7n'>
+            <connection class='textscan' directory='C:/Users/14196/OneDrive/Documents/Final Project' filename='titanic.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0pmgelz1srehgl19v7kxi076fj7n' name='titanic.csv' table='[titanic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='integer' name='pclass' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='integer' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='real' name='fare' ordinal='7' />
+            <column datatype='string' name='embarked' ordinal='8' />
+            <column datatype='string' name='class' ordinal='9' />
+            <column datatype='string' name='who' ordinal='10' />
+            <column datatype='boolean' name='adult_male' ordinal='11' />
+            <column datatype='string' name='deck' ordinal='12' />
+            <column datatype='string' name='embark_town' ordinal='13' />
+            <column datatype='string' name='alive' ordinal='14' />
+            <column datatype='boolean' name='alone' ordinal='15' />
+            <column datatype='string' name='F17' ordinal='16' />
+            <column datatype='integer' name='fare2' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0pmgelz1srehgl19v7kxi076fj7n' name='titanic.csv' table='[titanic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='integer' name='pclass' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='integer' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='real' name='fare' ordinal='7' />
+            <column datatype='string' name='embarked' ordinal='8' />
+            <column datatype='string' name='class' ordinal='9' />
+            <column datatype='string' name='who' ordinal='10' />
+            <column datatype='boolean' name='adult_male' ordinal='11' />
+            <column datatype='string' name='deck' ordinal='12' />
+            <column datatype='string' name='embark_town' ordinal='13' />
+            <column datatype='string' name='alive' ordinal='14' />
+            <column datatype='boolean' name='alone' ordinal='15' />
+            <column datatype='string' name='F17' ordinal='16' />
+            <column datatype='integer' name='fare2' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[survived]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>survived</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pclass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pclass]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>pclass</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sibsp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sibsp]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>sibsp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parch]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>parch</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>fare</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embarked</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[embarked]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>embarked</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>who</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[who]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>who</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adult_male</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[adult_male]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>adult_male</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deck</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deck]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>deck</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embark_town</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[embark_town]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>embark_town</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alive]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>alive</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alone</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[alone]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>alone</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F17</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F17]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>F17</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fare2]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>fare2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_3429172657274DEF856A26FF7F85BB05]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='titanic.csv' datatype='table' name='[__tableau_internal_object_id__].[titanic.csv_3429172657274DEF856A26FF7F85BB05]' role='measure' type='quantitative' />
+      <column caption='Adult Male' datatype='boolean' name='[adult_male]' role='dimension' type='nominal' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Alive' datatype='string' name='[alive]' role='dimension' type='nominal' />
+      <column caption='Alone' datatype='boolean' name='[alone]' role='dimension' type='nominal' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column caption='Deck' datatype='string' name='[deck]' role='dimension' type='nominal' />
+      <column caption='Embark Town' datatype='string' name='[embark_town]' role='dimension' type='nominal' />
+      <column caption='Embarked' datatype='string' name='[embarked]' role='dimension' type='nominal' />
+      <column caption='Fare' datatype='real' name='[fare]' role='measure' type='quantitative' />
+      <column caption='Parch' datatype='integer' name='[parch]' role='measure' type='quantitative' />
+      <column caption='Pclass' datatype='integer' name='[pclass]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Sibsp' datatype='integer' name='[sibsp]' role='measure' type='quantitative' />
+      <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+      <column caption='Who' datatype='string' name='[who]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='titanic.csv' id='titanic.csv_3429172657274DEF856A26FF7F85BB05'>
+            <properties context=''>
+              <relation connection='textscan.0pmgelz1srehgl19v7kxi076fj7n' name='titanic.csv' table='[titanic#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='survived' ordinal='1' />
+                  <column datatype='integer' name='pclass' ordinal='2' />
+                  <column datatype='string' name='sex' ordinal='3' />
+                  <column datatype='integer' name='age' ordinal='4' />
+                  <column datatype='integer' name='sibsp' ordinal='5' />
+                  <column datatype='integer' name='parch' ordinal='6' />
+                  <column datatype='real' name='fare' ordinal='7' />
+                  <column datatype='string' name='embarked' ordinal='8' />
+                  <column datatype='string' name='class' ordinal='9' />
+                  <column datatype='string' name='who' ordinal='10' />
+                  <column datatype='boolean' name='adult_male' ordinal='11' />
+                  <column datatype='string' name='deck' ordinal='12' />
+                  <column datatype='string' name='embark_town' ordinal='13' />
+                  <column datatype='string' name='alive' ordinal='14' />
+                  <column datatype='boolean' name='alone' ordinal='15' />
+                  <column datatype='string' name='F17' ordinal='16' />
+                  <column datatype='integer' name='fare2' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='titanic' inline='true' name='federated.0zvit4f1bqp1nw13kqaun16n07nv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='titanic' name='textscan.15upjwe0nfl8gf19ucypb0cuqszt'>
+            <connection class='textscan' directory='C:/Users/14196/OneDrive/Documents/Final Project' filename='titanic.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.15upjwe0nfl8gf19ucypb0cuqszt' name='titanic.csv' table='[titanic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='integer' name='pclass' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='integer' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='real' name='fare' ordinal='7' />
+            <column datatype='string' name='embarked' ordinal='8' />
+            <column datatype='string' name='class' ordinal='9' />
+            <column datatype='string' name='who' ordinal='10' />
+            <column datatype='boolean' name='adult_male' ordinal='11' />
+            <column datatype='string' name='deck' ordinal='12' />
+            <column datatype='string' name='embark_town' ordinal='13' />
+            <column datatype='string' name='alive' ordinal='14' />
+            <column datatype='boolean' name='alone' ordinal='15' />
+            <column datatype='string' name='F17' ordinal='16' />
+            <column datatype='integer' name='fare2' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.15upjwe0nfl8gf19ucypb0cuqszt' name='titanic.csv' table='[titanic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='integer' name='pclass' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='integer' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='real' name='fare' ordinal='7' />
+            <column datatype='string' name='embarked' ordinal='8' />
+            <column datatype='string' name='class' ordinal='9' />
+            <column datatype='string' name='who' ordinal='10' />
+            <column datatype='boolean' name='adult_male' ordinal='11' />
+            <column datatype='string' name='deck' ordinal='12' />
+            <column datatype='string' name='embark_town' ordinal='13' />
+            <column datatype='string' name='alive' ordinal='14' />
+            <column datatype='boolean' name='alone' ordinal='15' />
+            <column datatype='string' name='F17' ordinal='16' />
+            <column datatype='integer' name='fare2' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[survived]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>survived</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pclass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pclass]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>pclass</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sibsp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sibsp]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>sibsp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parch]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>parch</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>fare</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embarked</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[embarked]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>embarked</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>who</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[who]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>who</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adult_male</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[adult_male]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>adult_male</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deck</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deck]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>deck</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embark_town</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[embark_town]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>embark_town</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alive]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>alive</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alone</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[alone]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>alone</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F17</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F17]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>F17</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fare2]</local-name>
+            <parent-name>[titanic.csv]</parent-name>
+            <remote-alias>fare2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Class (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[class]' new-bin='true'>
+          <bin default-name='true' value='&quot;First&quot;'>
+            <value>&quot;First&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Second&quot;'>
+            <value>&quot;Second&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Third&quot;'>
+            <value>&quot;Third&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='titanic.csv' datatype='table' name='[__tableau_internal_object_id__].[titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE]' role='measure' type='quantitative' />
+      <column caption='Adult Male' datatype='boolean' name='[adult_male]' role='dimension' type='nominal' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Alive' datatype='string' name='[alive]' role='dimension' type='nominal' />
+      <column caption='Alone' datatype='boolean' name='[alone]' role='dimension' type='nominal' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column caption='Deck' datatype='string' name='[deck]' role='dimension' type='nominal' />
+      <column caption='Embark Town' datatype='string' name='[embark_town]' role='dimension' type='nominal' />
+      <column caption='Embarked' datatype='string' name='[embarked]' role='dimension' type='nominal' />
+      <column caption='Fare' datatype='real' name='[fare]' role='measure' type='quantitative' />
+      <column caption='Parch' datatype='integer' name='[parch]' role='measure' type='quantitative' />
+      <column caption='Pclass' datatype='integer' name='[pclass]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Sibsp' datatype='integer' name='[sibsp]' role='measure' type='quantitative' />
+      <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+      <column caption='Who' datatype='string' name='[who]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' type='shape' />
+          <encoding attr='color' field='[Class (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;First&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Third&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Second&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='titanic.csv' id='titanic.csv_5989F0C19EE9427F87B52C4F31EC80BE'>
+            <properties context=''>
+              <relation connection='textscan.15upjwe0nfl8gf19ucypb0cuqszt' name='titanic.csv' table='[titanic#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='survived' ordinal='1' />
+                  <column datatype='integer' name='pclass' ordinal='2' />
+                  <column datatype='string' name='sex' ordinal='3' />
+                  <column datatype='integer' name='age' ordinal='4' />
+                  <column datatype='integer' name='sibsp' ordinal='5' />
+                  <column datatype='integer' name='parch' ordinal='6' />
+                  <column datatype='real' name='fare' ordinal='7' />
+                  <column datatype='string' name='embarked' ordinal='8' />
+                  <column datatype='string' name='class' ordinal='9' />
+                  <column datatype='string' name='who' ordinal='10' />
+                  <column datatype='boolean' name='adult_male' ordinal='11' />
+                  <column datatype='string' name='deck' ordinal='12' />
+                  <column datatype='string' name='embark_town' ordinal='13' />
+                  <column datatype='string' name='alive' ordinal='14' />
+                  <column datatype='boolean' name='alone' ordinal='15' />
+                  <column datatype='string' name='F17' ordinal='16' />
+                  <column datatype='integer' name='fare2' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Suvivors by Gender, Class, and Deck</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='titanic' name='federated.0zvit4f1bqp1nw13kqaun16n07nv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvit4f1bqp1nw13kqaun16n07nv'>
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column caption='Deck' datatype='string' name='[deck]' role='dimension' type='nominal' />
+            <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[deck]' derivation='None' name='[none:deck:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sex]' derivation='None' name='[none:sex:nk]' pivot='key' type='nominal' />
+            <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+            <column-instance column='[survived]' derivation='Sum' name='[sum:survived:qk]' pivot='key' type='quantitative' />
+            <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:deck:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' shelf='columns'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:sex:nk]' member-value='&quot;male&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:class:nk]' value='106' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:sex:nk] * [federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk])</rows>
+        <cols>([federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:class:nk] / [federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:deck:nk])</cols>
+      </table>
+      <simple-id uuid='{9B8184DD-BBFD-4A83-A522-C5F0439B27BB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Comparison of Fares between Cities and Class</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='titanic' name='federated.0zvit4f1bqp1nw13kqaun16n07nv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvit4f1bqp1nw13kqaun16n07nv'>
+            <column datatype='string' name='[Class (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[class]' new-bin='true'>
+                <bin default-name='true' value='&quot;First&quot;'>
+                  <value>&quot;First&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Second&quot;'>
+                  <value>&quot;Second&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Third&quot;'>
+                  <value>&quot;Third&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column caption='Embark Town' datatype='string' name='[embark_town]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[fare2]' role='measure' type='quantitative' />
+            <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[embark_town]' derivation='None' name='[none:embark_town:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fare2]' derivation='Sum' name='[sum:fare2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:fare2:qk]' scope='rows' value='Fare Count' />
+            <format attr='height' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:class:nk]' value='27' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:embark_town:nk]' value='187' />
+            <format attr='width' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:class:nk]' value='113' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='64' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='separator' scope='cols' value='/' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[Class (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#72b966' />
+                <format attr='size' value='0.83458560705184937' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:fare2:qk]</rows>
+        <cols>([federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:embark_town:nk] / [federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:class:nk])</cols>
+      </table>
+      <simple-id uuid='{869C32A4-7E88-47ED-A228-EF29F39C676B}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Survival of Accompany feat. Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='titanic' name='federated.0zvit4f1bqp1nw13kqaun16n07nv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvit4f1bqp1nw13kqaun16n07nv'>
+            <column caption='Alone' datatype='boolean' name='[alone]' role='dimension' type='nominal' />
+            <column-instance column='[alone]' derivation='None' name='[none:alone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[who]' derivation='None' name='[none:who:nk]' pivot='key' type='nominal' />
+            <column caption='Sibsp' datatype='integer' name='[sibsp]' role='measure' type='quantitative' />
+            <column-instance column='[sibsp]' derivation='Sum' name='[sum:sibsp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[survived]' derivation='Sum' name='[sum:survived:qk]' pivot='key' type='quantitative' />
+            <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+            <column caption='Who' datatype='string' name='[who]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:who:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:sibsp:qk]' scope='rows' value='Siblings' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:who:nk]' value='90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' palette='green_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' />
+              <lod column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:sibsp:qk]' />
+              <lod column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:sibsp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' />
+              <lod column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:sibsp:qk]' />
+              <lod column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' />
+              <lod column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:sibsp:qk]' />
+              <lod column='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:sibsp:qk] + [federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk])</rows>
+        <cols>([federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:alone:nk] / [federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:who:nk])</cols>
+      </table>
+      <simple-id uuid='{93832A07-92A1-43DF-A82E-07D2D64F2BB1}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:class:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:deck:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:sex:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E0456353-3D91-48BA-9F72-32C3C42646A0}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='0' param='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[Class (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:class:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:deck:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:embark_town:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:embarked:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{687AE41C-2A1F-40C5-A2CA-0BAF322F7F9D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:alone:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[none:who:nk]</field>
+            <field>[federated.0zvit4f1bqp1nw13kqaun16n07nv].[sum:survived:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD1380FB-6A72-4FC0-811E-1FBB7AA9EFBE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      mOZT19tO7Rzbt9Y+5rg6eVsfl4UBUFhfXWRkYoqd+CLFio6mKpgPnqSG8ZQ+1GNsXMMwnr7e
+      Nmnn2J5W2zjOE/kov8MTyMKm+CKFok4qmaK3f4CpgJfk3j4Dfd0oioKmffu9xpRjNMWrmvbU
+      9baLqqptG9vTaqvqMa7XdITf4UlkWQA0p58XL//BY48N9Mnxv+hs8i6QsDUJgLA1CYCwNQmA
+      sDUJgLA1CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLA1CYCwNQmAsDVL7xSf
+      WLpDpqiTzqSpV3Kk0nmrVi9EU1jaFO9Sa+TLdUqpLeKlOjMXnscwDEzTfOrNmY/VpmoYx7rp
+      cyscZc7tqm0ep7e3jfNpJuvuFK+odPl8VB58raKjGyYu9ev/b7zn92h1m7NeK7RzbN9a+zjj
+      Ujp7Wx+XdU3xRpX17Ry6O8FgNEZ3wMvuQZb+3jCKoqCq3360dazfiao+db3tcpQ5t6v28Z7I
+      7ZtPM1l3p3jVxbmLjzfF9/d6rFq9EE3x7EVaiAZIAIStSQCErUkAhK1JAIStSQCErUkAhK1Z
+      eCqEEI1JJBLcunWL8+fPMz8/T29vL+FwmIWFBb73ve/R09PT9DHIHqCDJJNJANbX19nY2EDX
+      debn55/J6/IDxGIxZmZm2NraYmdnB03TmJiYYGJi4uG2aDYJQIfY3d3lnXfeoV6vc/36dT75
+      5BPef/99AGZnZ9s8uuZYW1sjmUxy6dIlfvjDH7KxsfFwrmfPnm3JGCQAHSISiTA+Po5pmlQq
+      FWq1GpqmMTU1RT7/bJ5WXi6XyWQyJBIJvvjiCyYmJqjX6yQSCXZ3d5tae35+nrm5OXkN0Ck2
+      NzdZWlpicHAQj8eDpmlEIhF++ctf8sorr7R7eE0xMzPDzMwMAOPj4y2tHYlEuHv3rgTgML/9
+      7W+Jx+NcvnyZ2dlZhoaGuHbtWlNrDg4O8sYbbwBw/vz5h49fuHChqXVbrbb4G/Q7v2hoGdfV
+      N9D6rD0kCgaDgJWnQ9drzH55C80XJNTlJuBWKWkhBnoDVpVomTNnzlCr1ZieniaVSnH58uWm
+      1NnJ5FnezDQ2tuFeekO+poynFcz9VfTF9xpaxnnhL60dg2ny+eefs7+/b10A9HKGYHQKo5Ak
+      e7DHZlnhyqVhq1bfMoZh8Pbbb3PlyhUKhQKqquJ2u5tS6+a9Hf7xnesNLfOTv3mFV58fbcp4
+      7EJRlId7dOtukufyk91dARUC/iDdfoPkfp5ot9+qEi2hKAo//vGPMU0Tj8fzzB5/21H6n/6Z
+      eubxPa6Fd4n0cnpqFNXpQVPA6XRQrdasWn1TmZXcY997vn5vrFa4///fXEDVUJwn9zDErsqz
+      c+jb24899jAA+XzemqZnvfjYt6VSiWKx+IQffuTcUBC3OtZQKaNa4uBAb2iZw1Q/fauhn1dD
+      wzjO/tm3/sxR5hwNOvjBy43NudurcHBw8J1q13Sj4brDfcGn1j2Kun+K+vm/a2wZNYxiQW3z
+      1Wso33hLWTHN41yPoTEHBweEQqFmlzlUvV5vyw2e2znndtVu17b+LrU77oOwul4jn89T02vo
+      9e9+CsDTN4pJqVigph9972f15UFMo06hkKdSraE3MA4rlEtFCsUSuq7//0O9Bh3lCVjXaxSL
+      JRr5u3uU7X3UJ79erZDP5ymVK/dD8+abb7555JEcU6VSweM5WoP8xspddnM1ulwKuRrUizlK
+      tRqJ+AZ6aZ8v764QjQ2gWRTdg80VllIFVEXBrBVI5yp4NIP4ZgqPAzaSafwejY3NLVSXl2oh
+      w/VbdxgbHvrW9TYy59r+BjeW9gj5PRRLZRRDJ5svsrezRd0w+ez6p3T3DeB2Hu0lWyO1b3zx
+      KQ5PF3qtiqYoZA4OqBVzZPIl7ty6AU4fQb91r3fmZ7+kotfx+QNsrq/iCYRI7ySoKS4yyU1M
+      h5dqMct2Mk0w4Gd9dZnNVIb+iDUnxpUKOT774ibBUJDEymoHfhBmmhQKRYyySUr3k1vf5PRo
+      mEK1Sk8oTH/Mi9PC/VagfxCSdygUHCyurVBXHeyGQ5w6PcXy4iKRsI/lxR2ckSm2EkvoNY1o
+      JGzdAB4ol4ro1Sq7Bzni+7ucmT7D6t4B46EIvZEIAa/L8poAtWqVcrlK9qBANrWDNzpMMr6O
+      PzJIINTNQL+1Z2T29/WS2MlglvIkixW2U3t09w/RZ25RVMOkl5cw0QkHfCzfW6R7cIRqctOy
+      +l3BbvqjUaJ9PSS3Up13CKS5vJw9N02wy4tDVYgNDOINhjBLB+SqkE5uULPw5MhKsYTmdFEu
+      VwgG/cQGBvF7HKzFt3A5YCO5T1eXj6Dfj8vtRi/nSO199xdkj1FUJk6fpb83hEPT6O2L4fV6
+      8LpUdjMHVApZcsWqtTUfiMSGmJoYwaFpuL0B+nqCBIMBtneSuDSTjZ09S+uVy1U06qguLy6n
+      h9HRYQqZHUqmg8x2HNPhIhAM4nG7cbvdxNdX0C0+Gdbx4HApGAw++y+C28WOL4JPov8DGzKV
+      2YU3BvEAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
